@@ -13,7 +13,7 @@ Argomenti affrontati:
 
 
 ## Strumenti usati
-Compilatore: gnu gcc 10.2.0
-Edior: vim
-Libro: C++ How to Program - Pearson
-OS: Arch Linux
+Compilatore: gnu gcc 10.2.0\
+Edior: vim\
+Libro: C++ How to Program - Pearson\
+OS: Arch Linux\
