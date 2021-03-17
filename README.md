@@ -17,3 +17,10 @@ Compilatore: gnu gcc 10.2.0\
 Edior: vim\
 Libro: C++ How to Program - Pearson\
 OS: Arch Linux\
+
+
+### Post Scriptum
+I codici non sono ottimizzati, commentati o testati (però un po' dovrebbero funzionare)
+Questa repo è solo per avere un posto ordinato dove mettere i codici
+
+Giovanni non mi prendere in giro
