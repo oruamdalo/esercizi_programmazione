@@ -16,7 +16,7 @@ Argomenti affrontati:
 Compilatore: gnu gcc 10.2.0\
 Edior: vim\
 Libro: C++ How to Program - Pearson\
-OS: Arch Linux\
+OS: Arch Linux
 
 
 ### Post Scriptum
