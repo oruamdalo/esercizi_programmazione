@@ -1,5 +1,5 @@
 // Convert decimal to binary - without arrays
-// @author: michel o'scugnizz
+// @author: dalosssski
 
 #include <iostream>
 
@@ -38,8 +38,6 @@ int getReverse(int num){
 		num /= 10;
 	}
 	
-	//bin *= 10;
-
 	return bin;
 }
 
