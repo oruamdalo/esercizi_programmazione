@@ -22,9 +22,9 @@ int main(){
 int getBinary(int dec){
 	int bin{1};
 	while (dec != 1){ 
-        short res = dec % 2;
-        bin = bin*10 + res;
-        dec /= 2;
+		short res = dec % 2;
+		bin = bin*10 + res;
+		dec /= 2;
     } 
 
 	return getReverse(bin);
