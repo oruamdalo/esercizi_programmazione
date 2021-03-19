@@ -12,5 +12,8 @@ int main(){
 
 	cout << "PartNumber: " << invoice.getPartNumber() << endl;
 	cout << "Description: " << descr << endl;
+	cout << "Quantity: " << invoice.getQuantity() << endl;
+	cout << "Price: " << invoice.getPrice() << endl;
+	cout << "Invoice Amount: " << invoice.getInvoiceAmount() << endl;
 	return 0;
 }

@@ -1,6 +1,6 @@
 #include <string>
 #include "Invoice.h"
-
+#include <iostream>
 
 Invoice::Invoice(std::string number, std::string dsc, int quty, int prc){
 	partNumber = number;
@@ -8,7 +8,7 @@ Invoice::Invoice(std::string number, std::string dsc, int quty, int prc){
 	qty = quty;
 	price = prc;
 	VAT = 0.2;
-	discount = 1;
+	discount = 10;
 }
 
 void Invoice::setPartNumber(std::string number){
@@ -43,5 +43,12 @@ int Invoice::getPrice(){
 	return price;
 }
 
+float Invoice::getInvoiceAmount(){
+	float invoiceAmount = (float)(qty * price);
+	
+	invoiceAmount -= invoiceAmount * discount;
+	invoiceAmount += invoiceAmount * VAT;
 
+	return invoiceAmount;
+}
 

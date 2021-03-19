@@ -1,0 +1,6 @@
+make all --dry-run --always-make --keep-going --print-directory
+make: ingresso nella directory «/home/daloski/Uni/Programmazione/Codici»
+make: uscita dalla directory «/home/daloski/Uni/Programmazione/Codici»
+ 
+make: ***  Nessuna regola per generare l'obiettivo «all».
+ 

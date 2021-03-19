@@ -1,0 +1,272 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: ***  Nessuna regola per generare l'obiettivo «all».  Arresto.
+ 
+# GNU Make 4.3
+# Compilato per x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+#  Licenza GPLv3+: GNU GPL versione 3 o successiva <http://gnu.org/licenses/gpl.html>.
+#  Questo programma è software libero: siete liberi di modificarlo e ridistribuirlo.
+#  Non c'è ALCUNA GARANZIA, per quanto consentito dalle vigenti normative.
+
+# Generazione del database delle informazioni, creato il Fri Mar 19 17:03:56 2021
+
+# Variabili
+
+# ambiente
+NO_AT_BRIDGE = 1
+# ambiente
+GTK_RC_FILES = /etc/gtk/gtkrc:/home/daloski/.gtkrc:/home/daloski/.config/gtkrc
+# ambiente
+I3SOCK = /run/user/1000/i3/ipc-socket.611
+# ambiente
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-7f20187e-9334-4f15-a0fe-55e64d75394a.sock
+# ambiente
+NVM_DIR = /home/daloski/.nvm
+# predefinito
+MAKE_COMMAND := make
+# automatico
+@D = $(patsubst %/,%,$(dir $@))
+# ambiente
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# predefinito
+.VARIABLES := 
+# ambiente
+PWD = /home/daloski/Uni/Programmazione/Codici
+# automatico
+%D = $(patsubst %/,%,$(dir $%))
+# ambiente
+MAIL = /var/spool/mail/daloski
+# automatico
+^D = $(patsubst %/,%,$(dir $^))
+# ambiente
+VSCODE_LOG_STACK = false
+# automatico
+%F = $(notdir $%)
+# ambiente
+NVM_INC = /home/daloski/.nvm/versions/node/v14.16.0/include/node
+# ambiente
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+# ambiente
+LANG = it_IT.UTF-8
+# ambiente
+XAUTHORITY = /home/daloski/.Xauthority
+# predefinito
+.LOADED := 
+# predefinito
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/daloski/Uni/Programmazione/Codici
+# ambiente
+VSCODE_PIPE_LOGGING = true
+# ambiente
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatico
+*D = $(patsubst %/,%,$(dir $*))
+# ambiente
+PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
+# ambiente
+MFLAGS = -pqrR
+# predefinito
+.SHELLFLAGS := -c
+# ambiente
+NVM_BIN = /home/daloski/.nvm/versions/node/v14.16.0/bin
+# automatico
++D = $(patsubst %/,%,$(dir $+))
+# ambiente
+XCURSOR_THEME = breeze_cursors
+# ambiente
+XDG_SESSION_DESKTOP = KDE
+# ambiente
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=a82c0373-9ea9-4e86-baa0-7902b55d7ee2&iid=a82c0373-9ea9-4e86-baa0-7902b55d7ee2&sid=a82c0373-9ea9-4e86-baa0-7902b55d7ee2","uploadToServer":true}
+# makefile
+MAKEFILE_LIST := 
+# automatico
+@F = $(notdir $@)
+# ambiente
+VSCODE_VERBOSE_LOGGING = true
+# ambiente
+VSCODE_PID = 121517
+# ambiente
+XDG_SESSION_TYPE = x11
+# automatico
+?D = $(patsubst %/,%,$(dir $?))
+# automatico
+*F = $(notdir $*)
+# ambiente
+CHROME_DESKTOP = code-url-handler.desktop
+# ambiente
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatico
+<D = $(patsubst %/,%,$(dir $<))
+# ambiente
+VSCODE_NLS_CONFIG = {"locale":"it","availableLanguages":{},"_languagePackSupport":true}
+# ambiente
+BREAKPAD_DUMP_LOCATION = /home/daloski/.config/Code/exthost Crash Reports
+# predefinito
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# predefinito
+MAKECMDGOALS := all
+# ambiente
+SHLVL = 1
+# ambiente
+MAKELEVEL := 0
+# predefinito
+MAKE = $(MAKE_COMMAND)
+# ambiente
+PATH = /home/daloski/.emacs.d/bin:/home/daloski/.nvm/versions/node/v14.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin
+# predefinito
+MAKEFILES := 
+# ambiente
+MOTD_SHOWN = pam
+# automatico
+^F = $(notdir $^)
+# ambiente
+VSCODE_LOG_NATIVE = false
+# automatico
+?F = $(notdir $?)
+# ambiente
+KDE_APPLICATIONS_AS_SCOPE = 1
+# ambiente
+XDG_SEAT = seat0
+# ambiente
+XDG_CURRENT_DESKTOP = KDE
+# automatico
++F = $(notdir $+)
+# ambiente
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# ambiente
+DESKTOP_SESSION = /usr/share/xsessions/plasma-i3
+# ambiente
+ORIGINAL_XDG_CURRENT_DESKTOP = KDE
+# direttiva "override"
+GNUMAKEFLAGS := 
+# ambiente
+LOGNAME = daloski
+# ambiente
+XDG_VTNR = 1
+# makefile
+.DEFAULT_GOAL := 
+# ambiente
+DISPLAY = :0
+# ambiente
+GTK_MODULES = canberra-gtk-module
+# ambiente
+USER = daloski
+# predefinito
+MAKE_VERSION := 4.3
+# ambiente
+KDE_SESSION_UID = 1000
+# ambiente
+VSCODE_NODE_CACHED_DATA_DIR = /home/daloski/.config/Code/CachedData/8490d3dde47c57ba65ec40dd192d014fd2113496
+# ambiente
+_ = /usr/bin/make
+# ambiente
+XDG_RUNTIME_DIR = /run/user/1000
+# ambiente
+NVM_CD_FLAGS = 
+# ambiente
+XDG_SESSION_CLASS = user
+# ambiente
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# ambiente
+GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/daloski/.gtkrc-2.0:/home/daloski/.config/gtkrc-2.0
+# ambiente
+HOME = /home/daloski
+# ambiente
+ELECTRON_RUN_AS_NODE = 1
+# ambiente
+VSCODE_IPC_HOOK = /run/user/1000/vscode-1a718a8d-1.53.0-main.sock
+# ambiente
+KDEWM = /usr/bin/i3
+# ambiente
+XDG_SESSION_ID = 2
+# ambiente
+XCURSOR_SIZE = 24
+# predefinito
+.RECIPEPREFIX := 
+# automatico
+<F = $(notdir $<)
+# predefinito
+SUFFIXES := 
+# ambiente
+QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# ambiente
+KDE_SESSION_VERSION = 5
+# predefinito
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# ambiente
+KDE_FULL_SESSION = true
+# statistiche tabella di hash del set di variabili:
+# Carico=94/1024=9%, Rehash=0, Collisioni=4/121=3%
+
+# Valori di variabile non specifici per il modello
+
+# Nessun valore per la variabile "pattern-specific".
+
+# Directory
+
+# . (device 2082, inode 9705679): 13 file, no impossibilità.
+
+# 13 file, no impossibilità nelle directory 1.
+
+# Regole implicite
+
+# Regole non implicite.
+
+# File
+
+# Non è un obiettivo:
+Makefile:
+#  Regola di ricerca implicita completata.
+#  Il file non esiste.
+#  Il file è stato aggiornato.
+#  Aggiornamento non riuscito.
+
+# Non è un obiettivo:
+.DEFAULT:
+#  Regola di ricerca implicita non completata.
+#  Ora di modifica mai controllata.
+#  Il file non è stato aggiornato.
+
+# Non è un obiettivo:
+all:
+#  Obiettivo a riga di comando.
+#  Regola di ricerca implicita completata.
+#  Il file non esiste.
+#  Il file non è stato aggiornato.
+
+# Non è un obiettivo:
+makefile:
+#  Regola di ricerca implicita completata.
+#  Il file non esiste.
+#  Il file è stato aggiornato.
+#  Aggiornamento non riuscito.
+
+# Non è un obiettivo:
+GNUmakefile:
+#  Regola di ricerca implicita completata.
+#  Il file non esiste.
+#  Il file è stato aggiornato.
+#  Aggiornamento non riuscito.
+
+# statistiche tabella hash dei file:
+# Carico=6/1024=1%, Rehash=0, Collisioni=0/15=0%
+# Percorsi di ricerca VPATH
+
+# Non ci sono percorsi di ricerca 'vpath'.
+
+# Percorso di ricerca non generale (variabile «VPATH»).
+
+# buffer strcache: 1 (0) / stringhe = 21 / memorizzazione = 173 B / media = 8 B
+# buffer corrente: dimensione = 8162 B / usato = 173 B / numero = 21 / media = 8 B
+
+# prestazioni strcache: lookups = 24 / hit rate = 12%
+# statistiche della tabella hash:
+# Carico=21/8192=0%, Rehash=0, Collisioni=0/24=0%
+# Generazione del database completata il Fri Mar 19 17:03:56 2021
+
+ 

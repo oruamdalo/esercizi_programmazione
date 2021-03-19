@@ -20,13 +20,8 @@ class Invoice{
 		int getQuantity();
 		int getPrice();
 
-		// Member Function		
-
-		int getInvoiceAmount(){
-			//int out{0};
-			//out = price*qty; // TO-DO
-			return 0;		
-		}
+		// Member Functions		
+		float getInvoiceAmount();
 
 	private:
 		std::string partNumber;
