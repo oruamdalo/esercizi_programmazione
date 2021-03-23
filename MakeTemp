@@ -1,0 +1,4 @@
+Temp: Temp.o
+	g++ Temp.o -o Temp
+Temp.o: Temp.cpp
+	g++ -c Temp.cpp --std=c++11 -Wall -pedantic
