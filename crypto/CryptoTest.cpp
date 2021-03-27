@@ -36,7 +36,7 @@ int main(){
             break;
         default:
             cout << "Chiusura programma.\n";
-            break;
+            return 0;
     }
     
     cout << "Messaggio dopo conversione: " << crypto.getMessage() << endl;
