@@ -1,7 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/maurodalo/Documents/programmazione/codici/Magazzino'
-g++ -c Magazzino.cpp --std=c++11 -Wall -pedantic -o Magazzino.o
-g++ -c Articolo.cpp --std=c++11 -Wall -pedantic -o Articolo.o
-g++ Magazzino.o Articolo.o -o Magazzino
-make: Leaving directory `/Users/maurodalo/Documents/programmazione/codici/Magazzino'
- 
