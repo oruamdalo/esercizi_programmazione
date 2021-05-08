@@ -1,4 +1,4 @@
-a# Esercizi Programmazione 1
+# Esercizi Programmazione 1
 Insieme di esercizi del corso Programmazione 1 - Michele O' Scugnizz
 
 ## Linguaggio C++
