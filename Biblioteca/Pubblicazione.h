@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 
 #ifndef PUB_H
 #define PUB_H
@@ -14,7 +15,7 @@ class Pubblicazione{
 
         // Getters
         std::string getTitolo();
-        std::string getAutori();
+        std::string getAutori() const;
         int getAnno();
 
         // Setters
@@ -26,12 +27,12 @@ class Pubblicazione{
         // Overload <
         bool operator<(const Pubblicazione &rhs);
 
-        std::string toString() const;
+        virtual std::string toString() const;
 
         
     protected:
         std::string titolo;
-        std::string autori;
+        std::vector<std::string> autori;
         int anno;
         Type type;
 

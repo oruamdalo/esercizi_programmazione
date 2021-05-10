@@ -17,6 +17,8 @@ class Libro: public Pubblicazione{
         Libro& setIsbn(unsigned long int isbn);
 
         Libro& setEditore(const std::string &edtiore);
+
+        std::string toString() const;
     private:
         unsigned int isbn;
         std::string editore;

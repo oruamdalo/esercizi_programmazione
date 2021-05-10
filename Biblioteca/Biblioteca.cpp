@@ -11,16 +11,19 @@ using std::endl;
 
 enum class Choice{ADD = 1, PRINT, EXIT};
 
-void addPub(std::vector<Pubblicazione>&);
-void displayLista(const std::vector<Pubblicazione>&);
+void addPub(std::vector<Pubblicazione*>&);
+void displayLista(const std::vector<Pubblicazione*>&);
 Choice enterChoice();
 
+// TODO1: make Pubblicazione pure virtual and prevent it from being instantiated
+// TODO2: use dynamic_cast to check object type instead of enum class
+
 int main(){
-    std::vector<Pubblicazione> pubblicazioni{};
+    std::vector<Pubblicazione*> pubblicazioni{};
 
     // Aggiungo in automatico
-    pubblicazioni.push_back(Pubblicazione("Come morire giovane", "Mauro", 2021));
-    pubblicazioni.push_back(Libro(1234567891234, "TopiMorti", "Jamm Bell", "Lorenzo&Fabio", 2020));
+    pubblicazioni.push_back(&Pubblicazione("Come morire giovane", "Mauro", 2021));
+    pubblicazioni.push_back(&Libro(1234567891234, "TopiMorti", "Jamm Bell", "Lorenzo, Fabio", 2020));
 
     Choice choice;
     while((choice = enterChoice()) != Choice::EXIT){
@@ -34,7 +37,7 @@ int main(){
             }break;
 
             case Choice::EXIT:{
-                cout << "Noo broo, ciao brooo" << endl;
+                cout << "Chiusura programma..." << endl;
             }
             break;
         }
@@ -58,7 +61,7 @@ Choice enterChoice(){
     return static_cast<Choice>(choice);
 }
 
-void addPub(std::vector<Pubblicazione> &lista){
+void addPub(std::vector<Pubblicazione*> &lista){
     cout << "Che tipo di pubblicazione vuoi inserire?"
     << "\n[0] Normale"
     << "\n[1] Libro"
@@ -109,15 +112,15 @@ void addPub(std::vector<Pubblicazione> &lista){
         }break;
 
         default:
-            std::cerr << "Bro nun po fa sti cos pero', e che cazz tien 20 anni...ittat nda merd" << endl;
+            std::cerr << "Tipo inserio non valido" << endl;
             break;
     }
 
-    lista.push_back(p);
+    lista.push_back(&p);
 }
 
-void displayLista(const std::vector<Pubblicazione> &lista){
-    for (const Pubblicazione& p: lista){
-        cout << p.toString() << endl;
+void displayLista(const std::vector<Pubblicazione*> &lista){
+    for ( Pubblicazione* p: lista){
+        cout << p->toString() << endl << endl;
     }
 }

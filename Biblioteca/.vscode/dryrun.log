@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/maurodalo/Documents/programmazione/codici/Biblioteca'
+g++ -c Biblioteca.cpp --std=c++11 -Wall -pedantic -o Biblioteca.o
+g++ -c Pubblicazione.cpp --std=c++11 -Wall -pedantic -o Pubblicazione.o
+g++ -c Libro.cpp --std=c++11 -Wall -pedantic -o Libro.o
+g++ -c ArticoloR.cpp --std=c++11 -Wall -pedantic -o ArticoloR.o
+g++ -c ArticoloC.cpp --std=c++11 -Wall -pedantic -o ArticoloC.o
+g++ -c Rivista.cpp --std=c++11 -Wall -pedantic -o Rivista.o
+g++ -c Convegno.cpp --std=c++11 -Wall -pedantic -o Convegno.o
+g++ Biblioteca.o Pubblicazione.o Libro.o Rivista.o ArticoloR.o -o Biblioteca
+make: Leaving directory `/Users/maurodalo/Documents/programmazione/codici/Biblioteca'
+ 
