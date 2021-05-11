@@ -13,6 +13,8 @@ Argomenti affrontati:
 - [ ] Template
 - [ ] Linked List
 - [ ] Sorting Algorithms (still studying)
+    - [x] MergeSort (recursive)
+    - [ ] QuickSort
 
 
 ## Strumenti usati
