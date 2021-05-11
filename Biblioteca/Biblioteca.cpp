@@ -1,19 +1,8 @@
-#include <iostream>
-#include <vector>
-
-#include "Pubblicazione.h"
-#include "Libro.h"
-#include "ArticoloR.h"
+#include "Functions.h"
 
 using std::cout;
 using std::cin;
 using std::endl;
-
-enum class Choice{ADD = 1, PRINT, EXIT};
-
-void addPub(std::vector<Pubblicazione*>&);
-void displayLista(const std::vector<Pubblicazione*>&);
-Choice enterChoice();
 
 // TODO1: make Pubblicazione pure virtual and prevent it from being instantiated
 // TODO2: use dynamic_cast to check object type instead of enum class
@@ -22,14 +11,19 @@ int main(){
     std::vector<Pubblicazione*> pubblicazioni{};
 
     // Aggiungo in automatico
-    pubblicazioni.push_back(&Pubblicazione("Come morire giovane", "Mauro", 2021));
-    pubblicazioni.push_back(&Libro(1234567891234, "TopiMorti", "Jamm Bell", "Lorenzo, Fabio", 2020));
+    /*Pubblicazione p = Pubblicazione("Come morire giovane", "Mauro", 2021);
+    pubblicazioni.push_back(&p);*/ 
+    
+    Libro l = Libro(1234567891234, "TopiMorti", "Jamm Bell", "Lorenzo, Fabio", 2020);
+    pubblicazioni.push_back(&l);
 
     Choice choice;
     while((choice = enterChoice()) != Choice::EXIT){
         switch(choice){
             case Choice::ADD: {
                 addPub(pubblicazioni);
+                Libro l = Libro(1234567891234, "TopiMorti", "Jamm Bell", "Lorenzo, Fabio", 2020);
+                pubblicazioni.push_back(&l);
             }break;
 
             case Choice::PRINT:{
@@ -61,8 +55,16 @@ Choice enterChoice(){
     return static_cast<Choice>(choice);
 }
 
+
 void addPub(std::vector<Pubblicazione*> &lista){
-    cout << "Che tipo di pubblicazione vuoi inserire?"
+    Libro* l = new Libro(1234567891234, "MortiTopi", "Jamm Buon", "Gino, Lino", 2021);
+    lista.push_back(l);
+}
+
+// Functions implementations
+/*
+void addPub(std::vector<Pubblicazione*> &lista){
+    std::cout << "Che tipo di pubblicazione vuoi inserire?"
     << "\n[0] Normale"
     << "\n[1] Libro"
     << "\n[2] Articolo Rivista"
@@ -70,41 +72,44 @@ void addPub(std::vector<Pubblicazione*> &lista){
 
     Pubblicazione::Type choice;
     int c{0};
-    cin >> c;
+    std::cin >> c;
 
     choice = static_cast<Pubblicazione::Type>(c);
 
     // Questi ci sono per ogni tipo di pub
     std::string titolo, autori;
     int anno;
-    cout << "Inserisci titolo, autori e anno: ";
-    cin >> titolo >> autori >> anno;
+    //std::cout << "Inserisci titolo, autori e anno: ";
+    //std::cin >> titolo >> autori >> anno;
 
     // Puo essere Libro, Articolo o Pub
-    Pubblicazione p;
-
+   
     switch (choice){
         case Pubblicazione::Type::PUB:{
-            p = Pubblicazione(titolo, autori, anno);
+            Pubblicazione p = Pubblicazione(titolo, autori, anno);
+            lista.push_back(&p);
         }
         break;
         
         case Pubblicazione::Type::LIB:{
+            std::cout << "weee" << std::endl;
             long int isbn;
             std::string editore;
-            cout << "Inserisci ISBN e editore: ";
-            cin >> isbn >> editore;
-            
-            p = Libro(isbn, editore, titolo, autori, anno);
+            std::cout << "Inserisci ISBN e editore: ";
+            std::cin >> isbn >> editore;
+            Libro l = Libro(1234567891234, "TopiMorti", "Jamm Bell", "Lorenzo, Fabio", 2020);
+            //Libro p = Libro(isbn, editore, titolo, autori, anno);
+            lista.push_back(&l);
         }break;
 
         case Pubblicazione::Type::ARTR: {
             int nr, i, f;
             std::string tr;
-            cout << "Inserisci numero rivista, titolo rivista, pagina inizio e fine";
-            cin >> nr >> tr >> i >> f;
+            std::cout << "Inserisci numero rivista, titolo rivista, pagina inizio e fine";
+            std::cin >> nr >> tr >> i >> f;
 
-            p = ArticoloR(titolo, autori, anno, nr, tr, i, f);
+            ArticoloR p = ArticoloR(titolo, autori, anno, nr, tr, i, f);
+            lista.push_back(&p);
         }break;
 
         case Pubblicazione::Type::ARTC: {
@@ -112,15 +117,17 @@ void addPub(std::vector<Pubblicazione*> &lista){
         }break;
 
         default:
-            std::cerr << "Tipo inserio non valido" << endl;
+            std::cerr << "Tipo inserio non valido" << std::endl;
             break;
     }
+    
+    //std::cout << "size before: " << lista.size() << std::endl;
+    
+    //std::cout << "size after:" << lista.size() << std::endl;
+}*/
 
-    lista.push_back(&p);
-}
-
-void displayLista(const std::vector<Pubblicazione*> &lista){
-    for ( Pubblicazione* p: lista){
+void displayLista(std::vector<Pubblicazione*> lista){
+    for(Pubblicazione* p:lista){
         cout << p->toString() << endl << endl;
     }
 }

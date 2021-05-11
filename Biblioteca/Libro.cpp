@@ -28,7 +28,7 @@ Libro& Libro::setIsbn(unsigned long int i){
     return *this;
 }
 
-Libro& Libro::setEditore(const std::string &edtiore){
+Libro& Libro::setEditore(const std::string &editore){
     this->editore = editore;
     return *this;
 }

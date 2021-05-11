@@ -1,6 +1,6 @@
 Biblioteca: Biblioteca.o Pubblicazione.o Libro.o ArticoloR.o ArticoloC.o Rivista.o Convegno.o
 	g++ Biblioteca.o Pubblicazione.o Libro.o Rivista.o ArticoloR.o -o Biblioteca
-Biblioteca.o: Biblioteca.cpp Pubblicazione.h Libro.h ArticoloR.h ArticoloC.h
+Biblioteca.o: Biblioteca.cpp Pubblicazione.h Libro.h ArticoloR.h ArticoloC.h Functions.h
 	g++ -c Biblioteca.cpp --std=c++11 -Wall -pedantic -o Biblioteca.o
 Pubblicazione.o: Pubblicazione.cpp Pubblicazione.h
 	g++ -c Pubblicazione.cpp --std=c++11 -Wall -pedantic -o Pubblicazione.o

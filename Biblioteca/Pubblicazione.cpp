@@ -33,11 +33,12 @@ int Pubblicazione::getAnno(){
     return anno;
 }
 
+// Split string by commas "," and put each separated string into "autori" vector
 Pubblicazione& Pubblicazione::setAutori(const std::string &aut){
     autori.clear();
     std::stringstream temp(aut);
     std::string seg;
-    while(std::getline(temp, seg, ',')){
+    while(std::getline(temp, seg, ',')){ // this does the job
         autori.push_back(seg);
     }
 
